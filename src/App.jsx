@@ -2,6 +2,7 @@ import "./App.css";
 import Card from "./components/card";
 import Technology from "./components/technology";
 import Data from "./data.json";
+import UserInfo from "./components/uuidcard";
 
 var name, heading, cardbody;
 name = "Afrid";
@@ -109,6 +110,28 @@ function App() {
                 {Data.map((data, index) => <Technology techImg={data.techImg} techTitle={data.techTitle} techDesc={data.techDesc} key={index} />)}
 
               </div>
+
+            </div>
+
+          </div>
+
+          {/* mapping data with a unique uuid */}
+          <div className="uuid-div custom">
+
+            <div>
+
+              <div className="category">
+                <p>
+                  <i class="fi fi-tr-id-badge"></i> Mapping unlimited data with a unique uuid
+                </p>
+              </div>
+
+              <div className="user-all-card">
+
+                <UserInfo />
+
+              </div>
+
 
             </div>
 

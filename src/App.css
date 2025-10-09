@@ -62,7 +62,7 @@ body {
 .all-card {
     gap: 1rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, max-content));
 }
 
 .custom>div .category {
@@ -148,14 +148,20 @@ body {
     color: lightgray;
 }
 
-.tech-img {
+.custom:nth-child(4)>div .category {
+    background-color: rgba(238, 130, 238, 0.267);
+    color: violet;
+}
+
+.tech-img,
+.userProfile {
     width: 80px;
 }
 
-.tech-img img {
+.tech-img img,
+.userProfile img {
     width: 100%;
     display: block;
-    margin: auto;
 }
 
 .card {
@@ -278,6 +284,33 @@ body {
 }
 
 
+.usercard {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.usercard>div {
+    background: #11171fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.usercard>div>div:nth-child(1) {
+    margin-bottom: 1rem;
+}
+
+.usercard>div>div:nth-child(2)>*:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+.userProfile {
+    border: 3px solid rgba(173, 216, 230, 0.322);
+    border-radius: 50%;
+    padding: .2rem;
+}
 
 /*====================responsive css========================*/
 

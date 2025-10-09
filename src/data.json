@@ -1,0 +1,42 @@
+[
+  {
+    "techImg": "/images/html.png",
+    "techTitle": "HTML 5",
+    "techDesc": "HTML is the standard markup language used to structure and display content on web pages."
+  },
+  {
+    "techImg": "/images/css.png",
+    "techTitle": "CSS 3",
+    "techDesc": "CSS styles the web pages, controlling colors, layouts, fonts, and responsive designs for better presentation."
+  },
+  {
+    "techImg": "/images/js.png",
+    "techTitle": "JavaScript",
+    "techDesc": "JavaScript adds interactivity and dynamic behavior to web pages, enhancing user engagement and functionality."
+  },
+  {
+    "techImg": "/images/bootstrap.png",
+    "techTitle": "Bootstrap",
+    "techDesc": "Framework built on top of React for SSR (Server-Side Rendering) and routing."
+  },
+  {
+    "techImg": "/images/react.png",
+    "techTitle": "React JS",
+    "techDesc": "Bootstrap is a front-end framework providing ready-made responsive design components using HTML, CSS, and JavaScript."
+  },
+  {
+    "techImg": "/images/nextjs.png",
+    "techTitle": "Next JS",
+    "techDesc": "Framework built on top of React for SSR (Server-Side Rendering) and routing."
+  },
+  {
+    "techImg": "/images/expressjs.png",
+    "techTitle": "Express JS",
+    "techDesc": "Handles backend API logic, authentication, and server-side operations."
+  },
+  {
+    "techImg": "/images/mongodb.png",
+    "techTitle": "Mongo DB",
+    "techDesc": "Framework built on top of React for SSR (Server-Side Rendering) and routing."
+  }
+]

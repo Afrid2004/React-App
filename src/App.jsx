@@ -1,5 +1,7 @@
 import "./App.css";
 import Card from "./components/card";
+import Technology from "./components/technology";
+import Data from "./data.json";
 
 var name, heading, cardbody;
 name = "Afrid";
@@ -89,6 +91,27 @@ function App() {
               </div>
 
             </div>
+          </div>
+
+          {/* mapping unlimited JSON data to card components */}
+          <div className="mapping-div custom">
+
+            <div className="mapping-component">
+
+              <div className="category">
+                <p>
+                  <i class="fi fi-tr-back-up"></i> Mapping unlimited JSON data to card components
+                </p>
+              </div>
+
+              <div className="all-card">
+
+                {Data.map((data, index) => <Technology techImg={data.techImg} techTitle={data.techTitle} techDesc={data.techDesc} key={index} />)}
+
+              </div>
+
+            </div>
+
           </div>
 
         </div>

@@ -1,5 +1,5 @@
-var name, heading, cardbody;
-name = "Afrid";
+var heading, cardbody;
+
 heading = {
   fontWeight: "500",
   marginBottom: "1rem",
@@ -12,12 +12,13 @@ cardbody = {
   boxShadow: " rgba(0, 0, 0, 0.16) 0px 1px 4px",
 };
 
-function Card() {
+function Card(props) {
+  const { authorName, cardHeading, cardDesc } = props;
   return <div style={cardbody}>
     <h1 style={heading}>
-      Hello, I'm {name}. From today, we will learn about React JS
+      Hello I'm {authorName}, {cardHeading}
     </h1>
-    <h3>The library for web and native user interfaces.</h3>
+    <h3>{cardDesc}</h3>
   </div>
 }
 

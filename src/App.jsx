@@ -64,27 +64,32 @@ function App() {
 
           </div>
 
-          {/* component */}
+          {/* component with props and destructure*/}
           <div className="component-div custom">
+
             <div className="component">
+
               <div className="category">
                 <p>
-                  <i class="fi fi-tr-cards-blank"></i> Card using component
+                  <i class="fi fi-tr-cards-blank"></i> Card using component included props and destructure
                 </p>
               </div>
 
               <div className="all-card">
+
                 {/* card 1 */}
-                <Card />
+                <Card authorName="Afrid" cardHeading="From today we will learn about React JS" cardDesc="The library for web and native user interfaces." />
+
                 {/* card 2 */}
-                <Card />
+                <Card authorName="Faisal" cardHeading="From today we will learn about Express JS" cardDesc="The library for web and native user interfaces." />
+
                 {/* card 3 */}
-                <Card />
+                <Card authorName="Arman" cardHeading="From today we will learn about Next JS" cardDesc="The library for web and native user interfaces." />
+
               </div>
+
             </div>
           </div>
-
-
 
         </div>
 

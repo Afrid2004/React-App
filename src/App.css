@@ -82,13 +82,13 @@ body {
 }
 
 .custom:nth-child(1)>div .category {
-    background-color: rgba(30, 143, 255, 0.123);
+    background-color: rgba(30, 143, 255, 0.18);
     color: rgb(2, 125, 248);
 }
 
 .custom:nth-child(2)>div .category {
-    background-color: rgba(255, 99, 71, 0.18);
-    color: rgb(254, 75, 43);
+    background-color: #0799923d;
+    color: #01beb4;
 }
 
 

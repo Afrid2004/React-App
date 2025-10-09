@@ -107,7 +107,6 @@ function App() {
               <div className="all-card">
 
                 {Data.map((data, index) => <Technology techImg={data.techImg} techTitle={data.techTitle} techDesc={data.techDesc} key={index} />)}
-                {Data.map((data, index) => <Technology techImg={data.techImg} techTitle={data.techTitle} techDesc={data.techDesc} key={index} />)}
 
               </div>
 

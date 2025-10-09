@@ -71,6 +71,30 @@ body {
     padding: .4rem 1rem;
     border-radius: 50px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom>div .category::after {
+    content: "";
+    position: absolute;
+    height: 170%;
+    background-color: rgba(255, 255, 255, 0.16);
+    width: 5px;
+    top: -10px;
+    left: 0;
+    transform: rotate(30deg);
+    animation: run 5s linear infinite;
+}
+
+@keyframes run {
+    0% {
+        left: -10%;
+    }
+
+    100% {
+        left: 100%;
+    }
 }
 
 .custom>div .category p {

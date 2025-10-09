@@ -120,8 +120,8 @@ body {
 }
 
 .custom:nth-child(3)>div .category {
-    background-color: #8854d037;
-    color: #9148f7;
+    background-color: rgba(211, 211, 211, 0.126);
+    color: lightgray;
 }
 
 .tech-img {
@@ -137,9 +137,40 @@ body {
 .card {
     position: relative;
     padding: 1.5rem;
-    border-radius: 1rem;
     background: #11171fff;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card:nth-child(1) {
+    border-bottom: 4px solid rgb(253, 58, 24);
+}
+
+.card:nth-child(2) {
+    border-bottom: 4px solid dodgerblue;
+}
+
+.card:nth-child(3) {
+    border-bottom: 4px solid yellow;
+}
+
+.card:nth-child(4) {
+    border-bottom: 4px solid rgb(209, 1, 209);
+}
+
+.card:nth-child(5) {
+    border-bottom: 4px solid rgb(95, 210, 255);
+}
+
+.card:nth-child(6) {
+    border-bottom: 4px solid lightgray;
+}
+
+.card:nth-child(7) {
+    border-bottom: 4px solid white;
+}
+
+.card:nth-child(8) {
+    border-bottom: 4px solid rgb(74, 252, 74);
 }
 
 

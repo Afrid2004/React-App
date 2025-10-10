@@ -29,14 +29,13 @@ body {
 }
 
 .header {
-    background-color: rgba(3, 26, 48, 0.123);
     padding: 1rem;
     margin-bottom: 1rem;
-    border-radius: 15px;
     position: sticky;
     top: 1rem;
     backdrop-filter: blur(70px);
     z-index: 10;
+    border: 1px solid rgba(211, 211, 211, 0.053);
 }
 
 .header h1 {
@@ -69,7 +68,7 @@ body {
     margin-bottom: 1.5rem;
     width: fit-content;
     padding: .4rem 1rem;
-    border-radius: 50px;
+
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -124,8 +123,8 @@ body {
 .footer {
     padding: 1rem;
     background-color: #11171fff;
-    border-radius: 5px;
     text-align: center;
+    border: 1px solid rgba(211, 211, 211, 0.053);
 }
 
 .footer-content p a {
@@ -170,6 +169,7 @@ body {
     background: #11171fff;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     cursor: pointer;
+    border: 1px solid rgba(211, 211, 211, 0.053);
 }
 
 .card .tech-img {
@@ -296,6 +296,9 @@ body {
     cursor: pointer;
     padding: 1rem;
     border-bottom: 3px solid rgb(74, 252, 74);
+    border-top: 1px solid rgba(211, 211, 211, 0.053);
+    border-left: 1px solid rgba(211, 211, 211, 0.053);
+    border-right: 1px solid rgba(211, 211, 211, 0.053);
 }
 
 .usercard>div>div:nth-child(1) {

@@ -7,7 +7,7 @@ heading = {
 cardbody = {
   padding: "1.5rem",
   maxWidth: "370px",
-  borderRadius: "1rem",
+  border: "1px solid rgba(211, 211, 211, 0.053)",
   background: "#11171fff",
   boxShadow: " rgba(0, 0, 0, 0.16) 0px 1px 4px",
 };

@@ -149,8 +149,8 @@ body {
 }
 
 .custom:nth-child(4)>div .category {
-    background-color: rgba(238, 130, 238, 0.267);
-    color: violet;
+    background-color: rgba(74, 252, 74, 0.199);
+    color: rgb(50, 255, 50);
 }
 
 .tech-img,
@@ -287,7 +287,7 @@ body {
 .usercard {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .usercard>div {
@@ -295,7 +295,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     cursor: pointer;
     padding: 1rem;
-    border-radius: 1rem;
+    border-bottom: 3px solid rgb(74, 252, 74);
 }
 
 .usercard>div>div:nth-child(1) {
@@ -307,9 +307,42 @@ body {
 }
 
 .userProfile {
-    border: 3px solid rgba(173, 216, 230, 0.322);
+    border: 2px solid rgba(211, 211, 211, 0.728);
     border-radius: 50%;
     padding: .2rem;
+}
+
+
+.userData p {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.userData p i {
+    display: flex;
+}
+
+.user {
+    position: relative;
+}
+
+.user-position {
+    position: absolute;
+    width: fit-content;
+    padding: .3rem .5rem;
+    background-color: rgba(74, 252, 74, 0.242);
+    top: 1.3rem;
+    right: 1.3rem;
+    border-radius: 5px;
+}
+
+.user-position p {
+    color: rgb(50, 255, 50);
+    font-size: .9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-start;
 }
 
 /*====================responsive css========================*/

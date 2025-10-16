@@ -3,6 +3,7 @@ import Card from "./components/card";
 import Technology from "./components/technology";
 import Data from "./data.json";
 import UserInfo from "./components/uuidcard";
+import NestedUser from "./components/neasted-mapping";
 
 var name, heading, cardbody;
 name = "Afrid";
@@ -30,7 +31,6 @@ function App() {
           </div>
         </div>
         <div className="container">
-
 
           <div className="body">
 
@@ -140,9 +140,26 @@ function App() {
 
             </div>
 
+            {/* mapping nested data */}
+            <div className="nested-div custom">
+
+              <div>
+
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-back-up"></i> Mapping unlimited Nested Data
+                  </p>
+                </div>
+
+                <div className="usercard">
+                  <NestedUser />
+                </div>
+
+              </div>
+
+            </div>
+
           </div>
-
-
 
         </div>
         <div className="footer">

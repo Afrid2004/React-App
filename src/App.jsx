@@ -25,17 +25,17 @@ cardbody = {
 function App() {
   return (
     <>
-      <div className="main-container">
+      <div className="main-custom-container">
 
         <div className="header">
-          <div className="container">
+          <div className="custom-container">
             <h1>
               Compleate React JS Project <i class="fi fi-tr-react"></i>
             </h1>
           </div>
         </div>
 
-        <div className="container">
+        <div className="custom-container">
 
           <div className="body">
 
@@ -211,7 +211,7 @@ function App() {
         </div>
 
         <div className="footer">
-          <div className="container">
+          <div className="custom-container">
             <div className="footer-content">
               <p>
                 <span>

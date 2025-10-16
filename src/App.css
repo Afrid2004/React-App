@@ -16,6 +16,7 @@
     --maincolor: #01beb4;
     --lightPrimaryColor: #0799923d;
     --borderColor: rgba(211, 211, 211, 0.053);
+    --borderColorPrimary: #01beb520;
     --bgColor: #0d1117;
     --bgColorLight: #11171fff;
     --textColor: white;
@@ -46,7 +47,7 @@ body::after {
 }
 
 
-.container {
+.custom-container {
     max-width: 320px;
     margin: 0 auto;
     padding: 2rem 0;
@@ -61,11 +62,11 @@ body::after {
     border: 1px solid var(--borderColor);
 }
 
-.header .container {
+.header .custom-container {
     padding: 1rem;
 }
 
-.footer .container {
+.footer .custom-container {
     padding: 1rem;
 }
 
@@ -104,6 +105,7 @@ body::after {
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    border: 1px solid var(--borderColorPrimary);
 }
 
 .custom>div .category::after {
@@ -432,43 +434,43 @@ p>i {
 /*====================responsive css========================*/
 
 @media (min-width:400px) {
-    .container {
+    .custom-container {
         max-width: 370px;
     }
 }
 
 @media (min-width:640px) {
-    .container {
+    .custom-container {
         max-width: 500px;
     }
 }
 
 @media (min-width:768px) {
-    .container {
+    .custom-container {
         max-width: 700px;
     }
 }
 
 @media (min-width:950px) {
-    .container {
+    .custom-container {
         max-width: 850px;
     }
 }
 
 @media (min-width:1024px) {
-    .container {
+    .custom-container {
         max-width: 980px;
     }
 }
 
 @media (min-width:1200px) {
-    .container {
+    .custom-container {
         max-width: 1150px;
     }
 }
 
 @media (min-width:1400px) {
-    .container {
+    .custom-container {
         max-width: 1200px;
     }
 }

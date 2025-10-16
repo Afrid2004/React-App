@@ -9,7 +9,6 @@ const data = [
     userBlood: "A+",
     userDistrict: "Feni, Bangladesh",
     userPosition: "1",
-    positionSup: <sup>st</sup>
   },
   {
     userProfileImg: "/images/user.png",
@@ -19,7 +18,6 @@ const data = [
     userBlood: "AB+",
     userDistrict: "Gulshan, Dhaka, Bangladesh",
     userPosition: "2",
-    positionSup: <sup>nd</sup>
   },
   {
     userProfileImg: "/images/user.png",
@@ -29,7 +27,6 @@ const data = [
     userBlood: "B+",
     userDistrict: "Chattagram, Bangladesh",
     userPosition: "3",
-    positionSup: <sup>rd</sup>
   },
   {
     userProfileImg: "/images/user.png",
@@ -39,7 +36,6 @@ const data = [
     userBlood: "O+",
     userDistrict: "Rajshahi, Bangladesh",
     userPosition: "4",
-    positionSup: <sup>th</sup>
   }
 ]
 
@@ -58,7 +54,7 @@ function UserInfo() {
           <p><i class="fi fi-tr-house-building"></i> {data.userDistrict}</p>
         </div>
         <div className="user-position">
-          <p>Position : {data.userPosition}{data.positionSup}</p>
+          <p>Position : {data.userPosition}</p>
         </div>
       </div>
     )}

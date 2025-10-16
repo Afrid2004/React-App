@@ -4,12 +4,16 @@
 /*flaticon thin rounded*/
 @import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-thin-rounded/css/uicons-thin-rounded.css');
 
+/*flaticon brands*/
+@import url('https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
     font-weight: 300;
+    border-radius: 0px !important;
 }
 
 :root {
@@ -22,14 +26,36 @@
     --textColor: white;
 }
 
+.btn-info {
+    background-color: var(--lightPrimaryColor) !important;
+    border: 1px solid var(--borderColorPrimary) !important;
+    color: var(--maincolor) !important;
+}
+
+.btn-info:hover {
+    background-color: #07999264 !important;
+}
+
+p {
+    margin-bottom: 0 !important;
+}
+
+div p:not(:last-child) {
+    margin-bottom: .5rem !important;
+}
+
+.card-body {
+    padding: 0;
+}
+
 a {
     text-decoration: none;
     color: inherit;
 }
 
 body {
-    background-color: var(--bgColor);
-    color: var(--textColor);
+    background-color: var(--bgColor) !important;
+    color: var(--textColor) !important;
 }
 
 body::after {
@@ -199,11 +225,12 @@ body::after {
 
 .card {
     padding: 1.5rem;
-    background: var(--bgColorLight);
+    background: var(--bgColorLight) !important;
+    color: var(--textColor) !important;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     cursor: pointer;
-    border: 1px solid var(--borderColor);
-    border-bottom: 3px solid var(--maincolor);
+    border: 1px solid var(--borderColor) !important;
+    border-bottom: 3px solid var(--maincolor) !important;
 }
 
 .card .tech-img {
@@ -344,8 +371,8 @@ body::after {
 }
 
 .userProfile {
-    border: 2px solid rgba(211, 211, 211, 0.728);
-    border-radius: 50%;
+    border: 3px solid rgba(211, 211, 211, 0.728);
+    border-radius: 50% !important;
     padding: .2rem;
 }
 

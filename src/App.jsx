@@ -6,6 +6,7 @@ import UserInfo from "./components/uuidcard";
 import NestedUser from "./components/neasted-mapping";
 import ClsCard from "./components/classcomponent";
 import Reacticon from "./components/reacticon";
+import Bootstracard from "./components/bootstrap-card";
 
 
 var name, heading, cardbody;
@@ -200,6 +201,27 @@ function App() {
 
                   <Reacticon />
 
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* Implement Bootstrap in React */}
+            <div className="bootstrap-div custom">
+
+              <div>
+
+                <div className="category">
+                  <p>
+                    <i class="fi fi-brands-bootstrap"></i> Implement Bootstrap in React
+                  </p>
+                </div>
+
+                <div className="all-card">
+                  <Bootstracard src="public/images/car-1.jpg" />
+                  <Bootstracard src="public/images/car-1.jpg" />
+                  <Bootstracard src="public/images/car-1.jpg" />
                 </div>
 
               </div>

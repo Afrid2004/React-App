@@ -4,6 +4,9 @@ import Technology from "./components/technology";
 import Data from "./data.json";
 import UserInfo from "./components/uuidcard";
 import NestedUser from "./components/neasted-mapping";
+import ClsCard from "./components/classcomponent";
+import Reacticon from "./components/reacticon";
+
 
 var name, heading, cardbody;
 name = "Afrid";
@@ -23,6 +26,7 @@ function App() {
   return (
     <>
       <div className="main-container">
+
         <div className="header">
           <div className="container">
             <h1>
@@ -30,6 +34,7 @@ function App() {
             </h1>
           </div>
         </div>
+
         <div className="container">
 
           <div className="body">
@@ -159,9 +164,52 @@ function App() {
 
             </div>
 
+            {/* Card using class Component included Props */}
+            <div className="nested-div custom">
+
+              <div>
+
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-back-up"></i> Card using Class Component included props
+                  </p>
+                </div>
+
+                <div className="usercard">
+                  <ClsCard title="HTML" desc="Hyper Text Markup language" />
+                  <ClsCard title="CSS" desc="Cascading Style sheet" />
+                  <ClsCard title="JS" desc="JavaScript" />
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* React Icons */}
+            <div className="icons-div custom">
+
+              <div>
+
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-react"></i> React Icons
+                  </p>
+                </div>
+
+                <div className="usercard">
+
+                  <Reacticon />
+
+                </div>
+
+              </div>
+
+            </div>
+
           </div>
 
         </div>
+
         <div className="footer">
           <div className="container">
             <div className="footer-content">
@@ -176,6 +224,7 @@ function App() {
             </div>
           </div>
         </div>
+
       </div>
     </>
   );

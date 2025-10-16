@@ -31,6 +31,21 @@ body {
     color: var(--textColor);
 }
 
+body::after {
+    content: "";
+    position: absolute;
+    background-image: url(../public/images/shadow-1.svg);
+    background-position: left;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    pointer-events: none;
+}
+
+
 .container {
     max-width: 320px;
     margin: 0 auto;
@@ -366,7 +381,8 @@ body {
 }
 
 .nested p:not(:last-child),
-.nested h2 {
+.nested h2,
+h2 {
     margin-bottom: 1rem;
 }
 
@@ -381,6 +397,37 @@ p>i {
     display: flex;
 
 }
+
+.user svg {
+    font-size: 5rem;
+}
+
+.icons p:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.icons:nth-child(1) svg {
+    color: dodgerblue;
+}
+
+.icons:nth-child(2) svg {
+    color: rgb(24, 190, 255);
+}
+
+.icons:nth-child(3) svg {
+    color: rgb(255, 107, 255);
+}
+
+.icons:nth-child(4) svg {
+    color: #ff0033;
+}
+
+.component-div {
+    position: relative;
+}
+
+
+
 
 /*====================responsive css========================*/
 

@@ -219,9 +219,9 @@ function App() {
                 </div>
 
                 <div className="all-card">
-                  <Bootstracard src="public/images/car-1.jpg" />
-                  <Bootstracard src="public/images/car-1.jpg" />
-                  <Bootstracard src="public/images/car-1.jpg" />
+                  <Bootstracard src="/images/car-1.jpg" />
+                  <Bootstracard src="/images/car-1.jpg" />
+                  <Bootstracard src="/images/car-1.jpg" />
                 </div>
 
               </div>

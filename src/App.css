@@ -29,13 +29,20 @@ body {
 }
 
 .header {
-    padding: 1rem;
     margin-bottom: 1rem;
     position: sticky;
-    top: 1rem;
+    top: 0;
     backdrop-filter: blur(70px);
     z-index: 10;
     border: 1px solid rgba(211, 211, 211, 0.053);
+}
+
+.header .container {
+    padding: 1rem;
+}
+
+.footer .container {
+    padding: 1rem;
 }
 
 .header h1 {
@@ -48,7 +55,7 @@ body {
 .header h1 i {
     display: flex;
     animation: rotate 7s linear infinite;
-    color: dodgerblue;
+    color: #01beb4;
     font-size: 2rem;
 }
 
@@ -68,7 +75,8 @@ body {
     margin-bottom: 1.5rem;
     width: fit-content;
     padding: .4rem 1rem;
-
+    background-color: #0799923d;
+    color: #01beb4;
     cursor: pointer;
     position: relative;
     overflow: hidden;
@@ -121,18 +129,17 @@ body {
 
 
 .footer {
-    padding: 1rem;
     background-color: #11171fff;
     text-align: center;
     border: 1px solid rgba(211, 211, 211, 0.053);
 }
 
 .footer-content p a {
-    color: dodgerblue;
     font-weight: 500;
+    color: #01beb4;
 }
 
-.custom:nth-child(1)>div .category {
+/* .custom:nth-child(1)>div .category {
     background-color: rgba(30, 143, 255, 0.18);
     color: rgb(2, 125, 248);
 }
@@ -150,7 +157,7 @@ body {
 .custom:nth-child(4)>div .category {
     background-color: rgba(74, 252, 74, 0.199);
     color: rgb(50, 255, 50);
-}
+} */
 
 .tech-img,
 .userProfile {
@@ -190,7 +197,7 @@ body {
     }
 }
 
-.card:nth-child(1) {
+/* .card:nth-child(1) {
     border-bottom: 4px solid rgb(253, 58, 24);
 }
 
@@ -253,7 +260,7 @@ body {
 
 .card:nth-child(8) .tech-img img {
     filter: drop-shadow(0 0 5px rgb(74, 252, 74));
-}
+} */
 
 @keyframes rotateBox {
     100% {
@@ -295,7 +302,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     cursor: pointer;
     padding: 1rem;
-    border-bottom: 3px solid rgb(74, 252, 74);
+    border-bottom: 3px solid #01beb4;
     border-top: 1px solid rgba(211, 211, 211, 0.053);
     border-left: 1px solid rgba(211, 211, 211, 0.053);
     border-right: 1px solid rgba(211, 211, 211, 0.053);
@@ -334,14 +341,14 @@ body {
     position: absolute;
     width: fit-content;
     padding: .3rem .5rem;
-    background-color: rgba(74, 252, 74, 0.242);
+    background-color: #0799923d;
     top: 1.3rem;
     right: 1.3rem;
     border-radius: 5px;
 }
 
 .user-position p {
-    color: rgb(50, 255, 50);
+    color: #01beb4;
     font-size: .9rem;
     font-weight: 500;
     display: flex;

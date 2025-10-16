@@ -21,137 +21,144 @@ cardbody = {
 function App() {
   return (
     <>
-      <div className="container">
-
+      <div className="main-container">
         <div className="header">
-          <h1>
-            Compleate React JS Project <i class="fi fi-tr-react"></i>
-          </h1>
+          <div className="container">
+            <h1>
+              Compleate React JS Project <i class="fi fi-tr-react"></i>
+            </h1>
+          </div>
         </div>
+        <div className="container">
 
-        <div className="body">
 
-          {/* without using component */}
-          <div className="main-div custom">
-            <div className="cards">
-              <div className="category">
-                <p>
-                  <i class="fi fi-tr-cards-blank"></i> Card
-                </p>
-              </div>
-              <div className="all-card">
-                {/* card 1 */}
-                <div style={cardbody}>
-                  <h1 style={heading}>
-                    Hello, I'm {name}. From today, we will learn about React JS
-                  </h1>
-                  <h3>The library for web and native user interfaces.</h3>
+          <div className="body">
+
+            {/* without using component */}
+            <div className="main-div custom">
+              <div className="cards">
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-cards-blank"></i> Card
+                  </p>
                 </div>
-                {/* card 2 */}
-                <div style={cardbody}>
-                  <h1 style={heading}>
-                    Hello, I'm {name}. From today, we will learn about React JS
-                  </h1>
-                  <h3>The library for web and native user interfaces.</h3>
+                <div className="all-card">
+                  {/* card 1 */}
+                  <div style={cardbody}>
+                    <h1 style={heading}>
+                      Hello, I'm {name}. From today, we will learn about React JS
+                    </h1>
+                    <h3>The library for web and native user interfaces.</h3>
+                  </div>
+                  {/* card 2 */}
+                  <div style={cardbody}>
+                    <h1 style={heading}>
+                      Hello, I'm {name}. From today, we will learn about React JS
+                    </h1>
+                    <h3>The library for web and native user interfaces.</h3>
+                  </div>
+                  {/* card 3 */}
+                  <div style={cardbody}>
+                    <h1 style={heading}>
+                      Hello, I'm {name}. From today, we will learn about React JS
+                    </h1>
+                    <h3>The library for web and native user interfaces.</h3>
+                  </div>
                 </div>
-                {/* card 3 */}
-                <div style={cardbody}>
-                  <h1 style={heading}>
-                    Hello, I'm {name}. From today, we will learn about React JS
-                  </h1>
-                  <h3>The library for web and native user interfaces.</h3>
+              </div>
+
+
+            </div>
+
+            {/* component with props and destructure*/}
+            <div className="component-div custom">
+
+              <div className="component">
+
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-cards-blank"></i> Card using component included props and destructure
+                  </p>
                 </div>
+
+                <div className="all-card">
+
+                  {/* card 1 */}
+                  <Card authorName="Afrid" cardHeading="From today we will learn about React JS" cardDesc="The library for web and native user interfaces." />
+
+                  {/* card 2 */}
+                  <Card authorName="Faisal" cardHeading="From today we will learn about Express JS" cardDesc="The library for web and native user interfaces." />
+
+                  {/* card 3 */}
+                  <Card authorName="Arman" cardHeading="From today we will learn about Next JS" cardDesc="The library for web and native user interfaces." />
+
+                </div>
+
               </div>
             </div>
 
+            {/* mapping unlimited JSON data to card components */}
+            <div className="mapping-div custom">
 
-          </div>
+              <div className="mapping-component">
 
-          {/* component with props and destructure*/}
-          <div className="component-div custom">
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-back-up"></i> Mapping unlimited JSON data to card components
+                  </p>
+                </div>
 
-            <div className="component">
+                <div className="all-card">
 
-              <div className="category">
-                <p>
-                  <i class="fi fi-tr-cards-blank"></i> Card using component included props and destructure
-                </p>
-              </div>
+                  {Data.map((data, index) => <Technology techImg={data.techImg} techTitle={data.techTitle} techDesc={data.techDesc} key={index} />)}
 
-              <div className="all-card">
-
-                {/* card 1 */}
-                <Card authorName="Afrid" cardHeading="From today we will learn about React JS" cardDesc="The library for web and native user interfaces." />
-
-                {/* card 2 */}
-                <Card authorName="Faisal" cardHeading="From today we will learn about Express JS" cardDesc="The library for web and native user interfaces." />
-
-                {/* card 3 */}
-                <Card authorName="Arman" cardHeading="From today we will learn about Next JS" cardDesc="The library for web and native user interfaces." />
-
-              </div>
-
-            </div>
-          </div>
-
-          {/* mapping unlimited JSON data to card components */}
-          <div className="mapping-div custom">
-
-            <div className="mapping-component">
-
-              <div className="category">
-                <p>
-                  <i class="fi fi-tr-back-up"></i> Mapping unlimited JSON data to card components
-                </p>
-              </div>
-
-              <div className="all-card">
-
-                {Data.map((data, index) => <Technology techImg={data.techImg} techTitle={data.techTitle} techDesc={data.techDesc} key={index} />)}
+                </div>
 
               </div>
 
             </div>
 
-          </div>
+            {/* mapping data with a unique uuid */}
+            <div className="uuid-div custom">
 
-          {/* mapping data with a unique uuid */}
-          <div className="uuid-div custom">
+              <div>
 
-            <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-id-badge"></i> Mapping unlimited data with a unique uuid
+                  </p>
+                </div>
 
-              <div className="category">
-                <p>
-                  <i class="fi fi-tr-id-badge"></i> Mapping unlimited data with a unique uuid
-                </p>
+                <div className="user-all-card">
+
+                  <UserInfo />
+
+                </div>
+
+
               </div>
-
-              <div className="user-all-card">
-
-                <UserInfo />
-
-              </div>
-
 
             </div>
 
           </div>
+
+
 
         </div>
-
         <div className="footer">
-          <div className="footer-content">
-            <p>
-              <span>
-                &copy; 2025 | All Rights Reserved | design & developed by{" "}
-                <a href="https://faisalafrid.vercel.app/">
-                  Faisal Yousuf Afrid
-                </a>
-              </span>
-            </p>
+          <div className="container">
+            <div className="footer-content">
+              <p>
+                <span>
+                  &copy; 2025 | All Rights Reserved | design & developed by{" "}
+                  <a href="https://faisalafrid.vercel.app/">
+                    Faisal Yousuf Afrid
+                  </a>
+                </span>
+              </p>
+            </div>
           </div>
         </div>
-
       </div>
     </>
   );

@@ -49,7 +49,7 @@ div p:not(:last-child) {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color: inherit;
 }
 
@@ -454,9 +454,12 @@ p>i {
 .component-div {
     position: relative;
 }
-
-
-
+.img-content  > .animate-img{
+    transition: all .5s ease-in-out;
+}
+.img-content:hover > .animate-img{
+    transform: scale(1.2);
+}
 
 /*====================responsive css========================*/
 

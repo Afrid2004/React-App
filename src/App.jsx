@@ -8,7 +8,8 @@ import ClsCard from "./components/classcomponent";
 import Reacticon from "./components/reacticon";
 import Bootstracard from "./components/bootstrap-card";
 import State from "./components/state-setstate";
-import Conditional_Rendering from "./components/Conditional_Rendering/index"
+import Conditional_Rendering from "./components/Conditional_Rendering/index";
+import EventhandlerOnchange from "./components/eventhandler-onchange";
 
 
 var name, heading, cardbody;
@@ -263,6 +264,25 @@ function App() {
                 <div className="all-card">
                   <Conditional_Rendering booleanvalue={true} />
                   <Conditional_Rendering booleanvalue={false} />
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* Event Handler in React */}
+            <div className="handler-div custom">
+
+              <div>
+
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-mouse-pointer-click"></i> Event Handler in React
+                  </p>
+                </div>
+
+                <div className="all-card">
+                  <EventhandlerOnchange />
                 </div>
 
               </div>

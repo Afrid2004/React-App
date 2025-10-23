@@ -7,6 +7,7 @@ import NestedUser from "./components/neasted-mapping";
 import ClsCard from "./components/classcomponent";
 import Reacticon from "./components/reacticon";
 import Bootstracard from "./components/bootstrap-card";
+import State from "./components/state-setstate";
 
 
 var name, heading, cardbody;
@@ -222,6 +223,25 @@ function App() {
                   <Bootstracard src="/images/car-1.jpg" />
                   <Bootstracard src="/images/car-1.jpg" />
                   <Bootstracard src="/images/car-1.jpg" />
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* State, setState, Event Handler in React */}
+            <div className="state-div custom">
+
+              <div>
+
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-react"></i> State, setState, Event Handler in React
+                  </p>
+                </div>
+
+                <div className="all-card">
+                  <State />
                 </div>
 
               </div>

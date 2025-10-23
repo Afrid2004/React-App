@@ -270,14 +270,14 @@ function App() {
 
             </div>
 
-            {/* Event Handler in React */}
+            {/* Event Handler(onChange) in React */}
             <div className="handler-div custom">
 
               <div>
 
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-mouse-pointer-click"></i> Event Handler in React
+                    <i class="fi fi-tr-mouse-pointer-click"></i> Event Handler(onChange) in React
                   </p>
                 </div>
 

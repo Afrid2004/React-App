@@ -8,6 +8,7 @@ import ClsCard from "./components/classcomponent";
 import Reacticon from "./components/reacticon";
 import Bootstracard from "./components/bootstrap-card";
 import State from "./components/state-setstate";
+import Conditional_Rendering from "./components/Conditional_Rendering/index"
 
 
 var name, heading, cardbody;
@@ -236,12 +237,32 @@ function App() {
 
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-react"></i> State, setState, Event Handler in React
+                    <i class="fi fi-tr-toggle-on"></i> State, setState, Event Handler in React
                   </p>
                 </div>
 
                 <div className="all-card">
                   <State />
+                </div>
+
+              </div>
+
+            </div>
+
+            {/* Conditional Rendering in React */}
+            <div className="conditional-div custom">
+
+              <div>
+
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-replace"></i> Conditional Rendering in React
+                  </p>
+                </div>
+
+                <div className="all-card">
+                  <Conditional_Rendering booleanvalue={true} />
+                  <Conditional_Rendering booleanvalue={false} />
                 </div>
 
               </div>

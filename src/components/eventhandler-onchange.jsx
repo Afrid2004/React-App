@@ -38,7 +38,7 @@ export default class EventhandlerOnchange extends Component {
   render() {
     const { name, email, password } = this.state;
     return (
-      <div className='d-flex gap-3'>
+      <div className='d-flex gap-3 flex-wrap'>
         <div className="form card">
           <h4 className='mb-3'>User Details Form</h4>
           <form onSubmit={this.handleFormData}>

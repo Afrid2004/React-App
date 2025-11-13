@@ -10,6 +10,7 @@ import Bootstracard from "./components/bootstrap-card";
 import State from "./components/state-setstate";
 import Conditional_Rendering from "./components/Conditional_Rendering/index";
 import EventhandlerOnchange from "./components/eventhandler-onchange";
+import StateLifting from "./components/State_Lifting/parent";
 
 
 var name, heading, cardbody;
@@ -30,7 +31,6 @@ function App() {
   return (
     <>
       <div className="main-custom-container">
-
         <div className="header">
           <div className="custom-container">
             <h1>
@@ -40,9 +40,7 @@ function App() {
         </div>
 
         <div className="custom-container">
-
           <div className="body">
-
             {/* without using component */}
             <div className="main-div custom">
               <div className="cards">
@@ -55,127 +53,128 @@ function App() {
                   {/* card 1 */}
                   <div style={cardbody}>
                     <h1 style={heading}>
-                      Hello, I'm {name}. From today, we will learn about React JS
+                      Hello, I'm {name}. From today, we will learn about React
+                      JS
                     </h1>
                     <h3>The library for web and native user interfaces.</h3>
                   </div>
                   {/* card 2 */}
                   <div style={cardbody}>
                     <h1 style={heading}>
-                      Hello, I'm {name}. From today, we will learn about React JS
+                      Hello, I'm {name}. From today, we will learn about React
+                      JS
                     </h1>
                     <h3>The library for web and native user interfaces.</h3>
                   </div>
                   {/* card 3 */}
                   <div style={cardbody}>
                     <h1 style={heading}>
-                      Hello, I'm {name}. From today, we will learn about React JS
+                      Hello, I'm {name}. From today, we will learn about React
+                      JS
                     </h1>
                     <h3>The library for web and native user interfaces.</h3>
                   </div>
                 </div>
               </div>
-
-
             </div>
 
             {/* component with props and destructure*/}
             <div className="component-div custom">
-
               <div className="component">
-
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-cards-blank"></i> Card using component included props and destructure
+                    <i class="fi fi-tr-cards-blank"></i> Card using component
+                    included props and destructure
                   </p>
                 </div>
 
                 <div className="all-card">
-
                   {/* card 1 */}
-                  <Card authorName="Afrid" cardHeading="From today we will learn about React JS" cardDesc="The library for web and native user interfaces." />
+                  <Card
+                    authorName="Afrid"
+                    cardHeading="From today we will learn about React JS"
+                    cardDesc="The library for web and native user interfaces."
+                  />
 
                   {/* card 2 */}
-                  <Card authorName="Faisal" cardHeading="From today we will learn about Express JS" cardDesc="The library for web and native user interfaces." />
+                  <Card
+                    authorName="Faisal"
+                    cardHeading="From today we will learn about Express JS"
+                    cardDesc="The library for web and native user interfaces."
+                  />
 
                   {/* card 3 */}
-                  <Card authorName="Arman" cardHeading="From today we will learn about Next JS" cardDesc="The library for web and native user interfaces." />
-
+                  <Card
+                    authorName="Arman"
+                    cardHeading="From today we will learn about Next JS"
+                    cardDesc="The library for web and native user interfaces."
+                  />
                 </div>
-
               </div>
             </div>
 
             {/* mapping unlimited JSON data to card components */}
             <div className="mapping-div custom">
-
               <div className="mapping-component">
-
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-back-up"></i> Mapping unlimited JSON data to card components
+                    <i class="fi fi-tr-back-up"></i> Mapping unlimited JSON data
+                    to card components
                   </p>
                 </div>
 
                 <div className="all-card">
-
-                  {Data.map((data, index) => <Technology techImg={data.techImg} techTitle={data.techTitle} techDesc={data.techDesc} key={index} />)}
-
+                  {Data.map((data, index) => (
+                    <Technology
+                      techImg={data.techImg}
+                      techTitle={data.techTitle}
+                      techDesc={data.techDesc}
+                      key={index}
+                    />
+                  ))}
                 </div>
-
               </div>
-
             </div>
 
             {/* mapping data with a unique uuid */}
             <div className="uuid-div custom">
-
               <div>
-
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-id-badge"></i> Mapping unlimited data with a unique uuid
+                    <i class="fi fi-tr-id-badge"></i> Mapping unlimited data
+                    with a unique uuid
                   </p>
                 </div>
 
                 <div className="user-all-card">
-
                   <UserInfo />
-
                 </div>
-
-
               </div>
-
             </div>
 
             {/* mapping nested data */}
             <div className="nested-div custom">
-
               <div>
-
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-back-up"></i> Mapping unlimited Nested Data
+                    <i class="fi fi-tr-back-up"></i> Mapping unlimited Nested
+                    Data
                   </p>
                 </div>
 
                 <div className="usercard">
                   <NestedUser />
                 </div>
-
               </div>
-
             </div>
 
             {/* Card using class Component included Props */}
             <div className="nested-div custom">
-
               <div>
-
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-back-up"></i> Card using Class Component included props
+                    <i class="fi fi-tr-back-up"></i> Card using Class Component
+                    included props
                   </p>
                 </div>
 
@@ -184,16 +183,12 @@ function App() {
                   <ClsCard title="CSS" desc="Cascading Style sheet" />
                   <ClsCard title="JS" desc="JavaScript" />
                 </div>
-
               </div>
-
             </div>
 
             {/* React Icons */}
             <div className="icons-div custom">
-
               <div>
-
                 <div className="category">
                   <p>
                     <i class="fi fi-tr-react"></i> React Icons
@@ -201,23 +196,18 @@ function App() {
                 </div>
 
                 <div className="usercard">
-
                   <Reacticon />
-
                 </div>
-
               </div>
-
             </div>
 
             {/* Implement Bootstrap in React */}
             <div className="bootstrap-div custom">
-
               <div>
-
                 <div className="category">
                   <p>
-                    <i class="fi fi-brands-bootstrap"></i> Implement Bootstrap in React
+                    <i class="fi fi-brands-bootstrap"></i> Implement Bootstrap
+                    in React
                   </p>
                 </div>
 
@@ -226,38 +216,32 @@ function App() {
                   <Bootstracard src="/images/car-1.jpg" />
                   <Bootstracard src="/images/car-1.jpg" />
                 </div>
-
               </div>
-
             </div>
 
             {/* State, setState, Event Handler in React */}
             <div className="state-div custom">
-
               <div>
-
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-toggle-on"></i> State, setState, Event Handler in React
+                    <i class="fi fi-tr-toggle-on"></i> State, setState, Event
+                    Handler in React
                   </p>
                 </div>
 
                 <div className="all-card">
                   <State />
                 </div>
-
               </div>
-
             </div>
 
             {/* Conditional Rendering in React */}
             <div className="conditional-div custom">
-
               <div>
-
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-replace"></i> Conditional Rendering in React
+                    <i class="fi fi-tr-replace"></i> Conditional Rendering in
+                    React
                   </p>
                 </div>
 
@@ -265,32 +249,40 @@ function App() {
                   <Conditional_Rendering booleanvalue={true} />
                   <Conditional_Rendering booleanvalue={false} />
                 </div>
-
               </div>
-
             </div>
 
             {/* Event Handler(onChange) in React */}
             <div className="handler-div custom">
-
               <div>
-
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-mouse-pointer-click"></i> Event Handler(onChange) in React
+                    <i class="fi fi-tr-mouse-pointer-click"></i> Event
+                    Handler(onChange) in React
                   </p>
                 </div>
 
                 <div className="all-card">
                   <EventhandlerOnchange />
                 </div>
-
               </div>
-
             </div>
 
-          </div>
+            {/* State Lifting in React */}
+            <div className="state-lifting-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-restock"></i> State Lifting in React
+                  </p>
+                </div>
 
+                <div>
+                  <StateLifting />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="footer">
@@ -307,7 +299,6 @@ function App() {
             </div>
           </div>
         </div>
-
       </div>
     </>
   );

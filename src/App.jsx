@@ -10,7 +10,7 @@ import Bootstracard from "./components/bootstrap-card";
 import State from "./components/state-setstate";
 import Conditional_Rendering from "./components/Conditional_Rendering/index";
 import EventhandlerOnchange from "./components/eventhandler-onchange";
-import StateLifting from "./components/State_Lifting/parent";
+import StateLifting from "./components/State_Lifting/home";
 
 
 var name, heading, cardbody;

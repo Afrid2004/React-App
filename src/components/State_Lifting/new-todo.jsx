@@ -4,12 +4,11 @@ function NewTodo(props) {
 
   const [newData, setNewData] = useState('');
 
-
-
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(newData);
     props.onhandleData(newData);
+    setNewData('');
   }
 
   const handleChange = (event) => {

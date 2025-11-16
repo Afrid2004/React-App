@@ -11,6 +11,7 @@ import State from "./components/state-setstate";
 import Conditional_Rendering from "./components/Conditional_Rendering/index";
 import EventhandlerOnchange from "./components/eventhandler-onchange";
 import StateLifting from "./components/State_Lifting/home";
+import FormFormik from "./components/form-formik";
 
 
 var name, heading, cardbody;
@@ -279,6 +280,22 @@ function App() {
 
                 <div>
                   <StateLifting />
+                </div>
+              </div>
+            </div>
+
+            {/* Control Form Data Using Formik */}
+            <div className="form-formik-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-settings-sliders"></i> Control Form Data
+                    Using Formik
+                  </p>
+                </div>
+
+                <div>
+                  <FormFormik />
                 </div>
               </div>
             </div>

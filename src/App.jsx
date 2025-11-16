@@ -289,7 +289,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-settings-sliders"></i> Control Form Data
+                    <i class="fi fi-tr-form"></i> Control Form Data
                     Using Formik
                   </p>
                 </div>

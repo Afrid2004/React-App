@@ -8,9 +8,10 @@ const FormFormik = () => {
       email: "",
       password: "",
     },
-    onSubmit : (values, {resetForm}) => {
-        console.log(values);
-        resetForm({ values: "" });
+    onSubmit: (values, { resetForm }) => {
+      console.log(values);
+      alert('Name: ' + values.name + ', Email: ' + values.email);
+      resetForm({ values: "" });
     }
   });
 

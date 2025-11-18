@@ -12,6 +12,7 @@ import Conditional_Rendering from "./components/Conditional_Rendering/index";
 import EventhandlerOnchange from "./components/eventhandler-onchange";
 import StateLifting from "./components/State_Lifting/home";
 import FormFormik from "./components/form-formik";
+import Main from "./components/Form_Validation/main";
 
 
 var name, heading, cardbody;
@@ -296,6 +297,22 @@ function App() {
 
                 <div>
                   <FormFormik />
+                </div>
+              </div>
+            </div>
+
+            {/* Vlidate Form Data Using Yup*/}
+            <div className="form-formik-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-registration-paper"></i> Validate Form Data Using
+                    Yup
+                  </p>
+                </div>
+
+                <div>
+                  <Main />
                 </div>
               </div>
             </div>

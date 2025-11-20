@@ -14,6 +14,7 @@ import StateLifting from "./components/State_Lifting/home";
 import FormFormik from "./components/form-formik";
 import Main from "./components/Form_Validation/main";
 import FAQsMain from "./components/FAQs/main";
+import UseEffectFetch from "./components/useEffect-fetch";
 
 
 var name, heading, cardbody;
@@ -329,6 +330,21 @@ function App() {
 
                 <div>
                   <FAQsMain />
+                </div>
+              </div>
+            </div>
+
+            {/* Fetching Data with useEffect Hook in React */}
+            <div className="form-formik-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-file-import"></i> Fetching Data with useEffect Hook in React
+                  </p>
+                </div>
+
+                <div>
+                  <UseEffectFetch />
                 </div>
               </div>
             </div>

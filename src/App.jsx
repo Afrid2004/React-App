@@ -13,6 +13,7 @@ import EventhandlerOnchange from "./components/eventhandler-onchange";
 import StateLifting from "./components/State_Lifting/home";
 import FormFormik from "./components/form-formik";
 import Main from "./components/Form_Validation/main";
+import FAQsMain from "./components/FAQs/main";
 
 
 var name, heading, cardbody;
@@ -313,6 +314,21 @@ function App() {
 
                 <div>
                   <Main />
+                </div>
+              </div>
+            </div>
+
+            {/* Toogle FAQs in React */}
+            <div className="form-formik-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-question-square"></i> Toogle FAQs in React
+                  </p>
+                </div>
+
+                <div>
+                  <FAQsMain />
                 </div>
               </div>
             </div>

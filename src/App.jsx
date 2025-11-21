@@ -15,6 +15,7 @@ import FormFormik from "./components/form-formik";
 import Main from "./components/Form_Validation/main";
 import FAQsMain from "./components/FAQs/main";
 import UseEffectFetch from "./components/useEffect-fetch";
+import HookMain from "./components/Custom_Hooks/main";
 
 
 var name, heading, cardbody;
@@ -345,6 +346,21 @@ function App() {
 
                 <div>
                   <UseEffectFetch />
+                </div>
+              </div>
+            </div>
+
+            {/* Fetching Data using Custom Hook in React */}
+            <div className="form-formik-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-hook"></i> Fetching Data using Custom Hook in React
+                  </p>
+                </div>
+
+                <div>
+                  <HookMain />
                 </div>
               </div>
             </div>

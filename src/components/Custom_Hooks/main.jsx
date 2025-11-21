@@ -2,7 +2,7 @@ import React from 'react'
 import useFetch from './custom-hook'
 
 const HookMain = () => {
-  const { data, loadData, error, loadingMessage } = useFetch('https://jsonplaceholder.typicode.com/todos');
+  const { data, loadData, error, loadingMessage } = useFetch('https://jsonplaceholder.typicode.com/posts');
 
   const errorMessage = error && <p>{error}</p>;
   const loadMessage = loadData && <p>{loadingMessage}</p>

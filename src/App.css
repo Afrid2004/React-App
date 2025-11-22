@@ -153,13 +153,14 @@ body::after {
 .custom>div .category::after {
     content: "";
     position: absolute;
-    height: 170%;
-    background-color: rgba(255, 255, 255, 0.16);
-    width: 5px;
-    top: -10px;
+    height: 250%;
+
+    width: 30px;
+    top: -30px;
     left: 0;
-    transform: rotate(30deg);
+    transform: rotate(40deg);
     animation: run 5s linear infinite;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.16), transparent);
 }
 
 @keyframes run {

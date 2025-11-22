@@ -16,6 +16,7 @@ import Main from "./components/Form_Validation/main";
 import FAQsMain from "./components/FAQs/main";
 import UseEffectFetch from "./components/useEffect-fetch";
 import HookMain from "./components/Custom_Hooks/main";
+import Toast from "./components/toast";
 
 
 var name, heading, cardbody;
@@ -305,7 +306,7 @@ function App() {
             </div>
 
             {/* Vlidate Form Data Using Yup*/}
-            <div className="form-formik-div custom">
+            <div className="yup-formik-div custom">
               <div>
                 <div className="category">
                   <p>
@@ -321,7 +322,7 @@ function App() {
             </div>
 
             {/* Toogle FAQs in React */}
-            <div className="form-formik-div custom">
+            <div className="faq-div custom">
               <div>
                 <div className="category">
                   <p>
@@ -336,7 +337,7 @@ function App() {
             </div>
 
             {/* Fetching Data with useEffect Hook in React */}
-            <div className="form-formik-div custom">
+            <div className="useeffect-div custom">
               <div>
                 <div className="category">
                   <p>
@@ -351,7 +352,7 @@ function App() {
             </div>
 
             {/* Fetching Data using Custom Hook in React */}
-            <div className="form-formik-div custom">
+            <div className="custom-hook-div custom">
               <div>
                 <div className="category">
                   <p>
@@ -364,6 +365,23 @@ function App() {
                 </div>
               </div>
             </div>
+
+            {/* Toast Notification in React */}
+            <div className="tostify-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-bell"></i> Toast Notification in React
+                  </p>
+                </div>
+
+                <div>
+                  <Toast />
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
 

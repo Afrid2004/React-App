@@ -17,6 +17,7 @@ import FAQsMain from "./components/FAQs/main";
 import UseEffectFetch from "./components/useEffect-fetch";
 import HookMain from "./components/Custom_Hooks/main";
 import Toast from "./components/toast";
+import CountryApp from "./components/Country_App/main";
 
 
 var name, heading, cardbody;
@@ -377,6 +378,21 @@ function App() {
 
                 <div>
                   <Toast />
+                </div>
+              </div>
+            </div>
+
+            {/* Country App in React */}
+            <div className="country-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-finish-flag"></i> Country App in React
+                  </p>
+                </div>
+
+                <div>
+                  <CountryApp />
                 </div>
               </div>
             </div>

@@ -8,7 +8,7 @@ const loadingMessage = "Data is loading...";
 const CountryApp = () => {
   const [loading, setLoading] = useState(true);
   const [countries, setCountries] = useState([]);
-  const [error, setError] = useState(true);
+  const [error, setError] = useState(false);
   const [filteredCountries, setFilteredCountries] = useState(countries);
 
   const fetchCountries = async (url) => {

@@ -1,40 +1,61 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import Countries from './countries';
+import Search from './search';
+
+const url = 'https://restcountries.com/v3.1/region/asia';
+const loadingMessage = "Data is loading...";
 
 const CountryApp = () => {
   const [loading, setLoading] = useState(true);
-  const [country, setCountry] = useState(null);
-  const [error, setError] = useState(null);
+  const [countries, setCountries] = useState([]);
+  const [error, setError] = useState(true);
+  const [filteredCountries, setFilteredCountries] = useState(countries);
 
-  const fetchCountry = async () => {
+  const fetchCountries = async (url) => {
     setLoading(true);
     try {
-      setLoading(false);
-      setError(null)
-      const fetchUrl = await fetch('https://restcountries.com/v3.1/region/asia');
-      const result = await fetchUrl.json();
-      if (!result.ok) {
-        throw Error('Failed to fetch countries!');
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error('Failed to fetch data. Try again later.');
       }
-      setCountry(result);
-    } catch (error) {
-      setError(error);
+      const data = await response.json();
+      setCountries(data);
+      setFilteredCountries(data);
       setLoading(false);
+      setError(null);
+    } catch (error) {
+      setLoading(false);
+      setError(error.message);
     }
   }
 
   useEffect(() => {
-    fetchCountry();
-  }, [])
+    fetchCountries(url);
+  }, []);
+
+  const handleRemoveCountry = (country) => {
+    const filteredCountries = countries.filter((data) => {
+      return data.name.common !== country;
+    });
+    setFilteredCountries(filteredCountries);
+  }
+
+  const handleSearch = (value) => {
+    const convertLower = value.toLowerCase();
+    const searchedCountry = countries.filter((data) => {
+      const countryName = data.name.common.toLowerCase();
+      return countryName.startsWith(convertLower);
+    });
+    setFilteredCountries(searchedCountry);
+  }
 
   return (
     <div>
-      <div className="country-header">
-        <h2>All Countries</h2>
-      </div>
-      <div>
-        <p>{loading && "Data is loading..."}</p>
-        <p>{error && error.message}</p>
-      </div>
+      <Search onSearch={handleSearch} />
+      {countries && <Countries onRemoveCountry={handleRemoveCountry} countries={filteredCountries} />}
+      <p>{loading && loadingMessage}</p>
+      <p>{error && error}</p>
+
     </div>
   )
 }

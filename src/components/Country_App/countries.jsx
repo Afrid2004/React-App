@@ -8,7 +8,7 @@ const Countries = (props) => {
   }
   return (
     <div className='all-card'>
-      {props.countries.slice(0, 8).map((country) => {
+      {props.countries.slice(0, 4).map((country) => {
         const newCountry = { id: uuid(), country };
         return <Country onRemoveCountry={handleRemoveCountry} key={newCountry.id} {...newCountry} />
       })}

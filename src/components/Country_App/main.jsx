@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Countries from './countries';
 import Search from './search';
 
-const url = 'https://restcountries.com/v3.1/region/asia';
+const url = 'https://restcountries.com/v3.1/subregion/Southern%20Asia';
 const loadingMessage = "Data is loading...";
 
 const CountryApp = () => {
@@ -53,9 +53,8 @@ const CountryApp = () => {
     <div>
       <Search onSearch={handleSearch} />
       {countries && <Countries onRemoveCountry={handleRemoveCountry} countries={filteredCountries} />}
-      <p>{loading && loadingMessage}</p>
-      <p>{error && error}</p>
-
+      {loading && <p className='card'>{loadingMessage}</p>}
+      {error && <p className='card'>{error}</p>}
     </div>
   )
 }

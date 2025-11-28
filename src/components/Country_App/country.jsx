@@ -17,7 +17,7 @@ const Country = (props) => {
         <h5>Name: {name.common}</h5>
         <p>Capital: {capital} </p>
         <p>Region: {region} </p>
-        <p>Area: {area} </p>
+        <p>Area: {area} sq km</p>
         <p>Languages: {Object.values(languages).join(", ")} </p>
       </div>
       <button className='btn btn-danger' onClick={() => { handleRemove(name.common) }}>Remove Country</button>

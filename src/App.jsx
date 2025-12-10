@@ -19,6 +19,7 @@ import HookMain from "./components/Custom_Hooks/main";
 import Toast from "./components/toast";
 import CountryApp from "./components/Country_App/main";
 import DynamicStyle from "./components/dynamic-style";
+import PropTypes from "./components/propTypes";
 
 
 var name, heading, cardbody;
@@ -409,6 +410,21 @@ function App() {
 
                 <div>
                   <DynamicStyle />
+                </div>
+              </div>
+            </div>
+
+            {/* Prop Types in React */}
+            <div className="country-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-followcollection"></i> Prop Types in React
+                  </p>
+                </div>
+
+                <div>
+                  <PropTypes />
                 </div>
               </div>
             </div>

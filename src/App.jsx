@@ -20,6 +20,7 @@ import Toast from "./components/toast";
 import CountryApp from "./components/Country_App/main";
 import DynamicStyle from "./components/dynamic-style";
 import PropTypes from "./components/propTypes";
+import UserData from "./components/useRef";
 
 
 var name, heading, cardbody;
@@ -313,8 +314,8 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-registration-paper"></i> Validate Form Data Using
-                    Yup
+                    <i class="fi fi-tr-registration-paper"></i> Validate Form
+                    Data Using Yup
                   </p>
                 </div>
 
@@ -329,7 +330,8 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-question-square"></i> Toogle FAQs in React
+                    <i class="fi fi-tr-question-square"></i> Toogle FAQs in
+                    React
                   </p>
                 </div>
 
@@ -344,7 +346,8 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-file-import"></i> Fetching Data with useEffect Hook in React
+                    <i class="fi fi-tr-file-import"></i> Fetching Data with
+                    useEffect Hook in React
                   </p>
                 </div>
 
@@ -359,7 +362,8 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-hook"></i> Fetching Data using Custom Hook in React
+                    <i class="fi fi-tr-hook"></i> Fetching Data using Custom
+                    Hook in React
                   </p>
                 </div>
 
@@ -404,7 +408,8 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-paintbrush-pencil"></i> Dynamic Style in React
+                    <i class="fi fi-tr-paintbrush-pencil"></i> Dynamic Style in
+                    React
                   </p>
                 </div>
 
@@ -419,7 +424,8 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-followcollection"></i> Prop Types in React
+                    <i class="fi fi-tr-followcollection"></i> Prop Types in
+                    React
                   </p>
                 </div>
 
@@ -429,7 +435,20 @@ function App() {
               </div>
             </div>
 
+            {/* useRef in React */}
+            <div className="country-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-code-compare"></i> useRef in React
+                  </p>
+                </div>
 
+                <div>
+                  <UserData />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

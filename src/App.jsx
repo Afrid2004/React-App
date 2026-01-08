@@ -21,7 +21,7 @@ import CountryApp from "./components/Country_App/main";
 import DynamicStyle from "./components/dynamic-style";
 import PropTypes from "./components/propTypes";
 import UserData from "./components/useRef";
-
+import UseReducer from "./components/useReducer";
 
 var name, heading, cardbody;
 name = "Afrid";
@@ -449,6 +449,23 @@ function App() {
                 </div>
               </div>
             </div>
+
+            {/* useReducer in React */}
+            <div className="country-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-compress-alt"></i> useReducer in React
+                  </p>
+                </div>
+
+                <div>
+                  <UseReducer />
+                </div>
+              </div>
+            </div>
+
+            
           </div>
         </div>
 

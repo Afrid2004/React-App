@@ -498,6 +498,11 @@ p>i {
     border: 1px solid rgba(240, 128, 128, 0.445);
 }
 
+li::marker{
+    font-size: 1.5rem;
+    font-weight: 500;
+    display: block;
+}
 @keyframes fade-in {
     0% {
         opacity: 0;

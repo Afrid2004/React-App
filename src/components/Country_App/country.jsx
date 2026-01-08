@@ -11,7 +11,7 @@ const Country = (props) => {
   return (
     <div className='card' style={{ maxWidth: "400px" }}>
       <div className="country-img" style={{ aspectRatio: "3/2" }}>
-        <img className='img-fluid w-100 h-100' src={flags.svg} alt={name.common} />
+        <img className='img-fluid w-100 h-100' src={flags.png} alt={name.common} />
       </div>
       <div className="country-info mb-2">
         <h5>Name: {name.common}</h5>

@@ -22,6 +22,7 @@ import DynamicStyle from "./components/dynamic-style";
 import PropTypes from "./components/propTypes";
 import UserData from "./components/useRef";
 import UseReducer from "./components/useReducer";
+import UseContext from "./components/useContext/component-1";
 
 var name, heading, cardbody;
 name = "Afrid";
@@ -461,6 +462,21 @@ function App() {
 
                 <div>
                   <UseReducer />
+                </div>
+              </div>
+            </div>
+
+            {/* useContext in React */}
+            <div className="country-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-network-analytic"></i> useContext in React
+                  </p>
+                </div>
+
+                <div>
+                  <UseContext />
                 </div>
               </div>
             </div>

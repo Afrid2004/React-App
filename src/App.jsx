@@ -23,6 +23,7 @@ import PropTypes from "./components/propTypes";
 import UserData from "./components/useRef";
 import UseReducer from "./components/useReducer";
 import UseContext from "./components/useContext/component-1";
+import ContextApi from "./components/contextApi";
 
 var name, heading, cardbody;
 name = "Afrid";
@@ -477,6 +478,21 @@ function App() {
 
                 <div>
                   <UseContext />
+                </div>
+              </div>
+            </div>
+
+            {/* contextApi in React */}
+            <div className="country-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i class="fi fi-tr-sitemap"></i> contextApi in React
+                  </p>
+                </div>
+
+                <div>
+                  <ContextApi />
                 </div>
               </div>
             </div>

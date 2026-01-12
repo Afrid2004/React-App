@@ -1,22 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Users from './users';
-import { Context } from '../../context/context';
+import { ContextProvider } from '../../context/context';
 import NewUser from './newUser';
-import { v4 as uuidV4 } from 'uuid';
+
 
 
 const ContextApi = () => {
-  const [user, setUser] = useState([
-    {id : uuidV4(), name : "Afrid"},
-    {id : uuidV4(), name : "Faruk"},
-  ]);
   
   return (
     <> 
-      <Context.Provider value={{user, setUser}}>
+      <ContextProvider>
         <NewUser />
         <Users />
-      </Context.Provider>
+      </ContextProvider>
     </>
   )
 }

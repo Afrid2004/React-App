@@ -1,9 +1,9 @@
-import React, { useContext, useState } from 'react'
-import { Context } from '../../context/context';
+import React, { useState } from 'react'
+import { UserContext } from '../../hooks/userContext';
 import { v4 as uuidV4 } from 'uuid';
 
 const NewUser = () => {
-  const {user, setUser} = useContext(Context);
+  const {setUser} = UserContext();
   const [newUser, setNewUser] = useState('');
 
   const handleSubmit = (event) => {

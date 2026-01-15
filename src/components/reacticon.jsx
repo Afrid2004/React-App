@@ -25,8 +25,8 @@ const icons = [
 ]
 
 export default function Reacticon() {
-  return icons.map((iconData) =>
-    <div className='user icons'>
+  return icons.map((iconData, index) =>
+    <div className='user icons' key={index}>
       <p>{iconData.Icon}</p>
       <h2>{iconData.Name}</h2>
       <p>{iconData.Desc}</p>

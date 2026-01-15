@@ -41,17 +41,17 @@ const data = [
 
 function UserInfo() {
   return <div className="usercard">
-    {data.map((data) =>
-      <div className='user'>
+    {data.map((data, index) =>
+      <div key={index} className='user'>
         <div className="userProfile">
           <img src={data.userProfileImg} alt={data.userName} />
         </div>
         <div className="userData">
           <h2>{data.userName}</h2>
-          <p><i class="fi fi-tr-department-structure"></i> {data.userDept}</p>
-          <p><i class="fi fi-tr-id-badge"></i> {data.userUuid}</p>
-          <p><i class="fi fi-tr-syringe-injection-blood"></i> {data.userBlood}</p>
-          <p><i class="fi fi-tr-house-building"></i> {data.userDistrict}</p>
+          <p><i className="fi fi-tr-department-structure"></i> {data.userDept}</p>
+          <p><i className="fi fi-tr-id-badge"></i> {data.userUuid}</p>
+          <p><i className="fi fi-tr-syringe-injection-blood"></i> {data.userBlood}</p>
+          <p><i className="fi fi-tr-house-building"></i> {data.userDistrict}</p>
         </div>
         <div className="user-position">
           <p>Position : {data.userPosition}</p>

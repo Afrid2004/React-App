@@ -24,6 +24,7 @@ import UserData from "./components/useRef";
 import UseReducer from "./components/useReducer";
 import UseContext from "./components/useContext/component-1";
 import ContextApi from "./components/contextApi";
+import UseReducerwithContextApi from "./components/useReducerwithCintextApi";
 
 var name, heading, cardbody;
 name = "Afrid";
@@ -46,7 +47,7 @@ function App() {
         <div className="header">
           <div className="custom-container">
             <h1>
-              Compleate React JS Project <i class="fi fi-tr-react"></i>
+              Compleate React JS Project <i className="fi fi-tr-react"></i>
             </h1>
           </div>
         </div>
@@ -58,7 +59,7 @@ function App() {
               <div className="cards">
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-cards-blank"></i> Card
+                    <i className="fi fi-tr-cards-blank"></i> Card
                   </p>
                 </div>
                 <div className="all-card">
@@ -95,7 +96,7 @@ function App() {
               <div className="component">
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-cards-blank"></i> Card using component
+                    <i className="fi fi-tr-cards-blank"></i> Card using component
                     included props and destructure
                   </p>
                 </div>
@@ -130,7 +131,7 @@ function App() {
               <div className="mapping-component">
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-back-up"></i> Mapping unlimited JSON data
+                    <i className="fi fi-tr-back-up"></i> Mapping unlimited JSON data
                     to card components
                   </p>
                 </div>
@@ -153,7 +154,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-id-badge"></i> Mapping unlimited data
+                    <i className="fi fi-tr-id-badge"></i> Mapping unlimited data
                     with a unique uuid
                   </p>
                 </div>
@@ -169,7 +170,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-back-up"></i> Mapping unlimited Nested
+                    <i className="fi fi-tr-back-up"></i> Mapping unlimited Nested
                     Data
                   </p>
                 </div>
@@ -180,12 +181,12 @@ function App() {
               </div>
             </div>
 
-            {/* Card using class Component included Props */}
+            {/* Card using className Component included Props */}
             <div className="nested-div custom">
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-back-up"></i> Card using Class Component
+                    <i className="fi fi-tr-back-up"></i> Card using className Component
                     included props
                   </p>
                 </div>
@@ -203,7 +204,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-react"></i> React Icons
+                    <i className="fi fi-tr-react"></i> React Icons
                   </p>
                 </div>
 
@@ -218,7 +219,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-brands-bootstrap"></i> Implement Bootstrap
+                    <i className="fi fi-brands-bootstrap"></i> Implement Bootstrap
                     in React
                   </p>
                 </div>
@@ -236,7 +237,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-toggle-on"></i> State, setState, Event
+                    <i className="fi fi-tr-toggle-on"></i> State, setState, Event
                     Handler in React
                   </p>
                 </div>
@@ -252,7 +253,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-replace"></i> Conditional Rendering in
+                    <i className="fi fi-tr-replace"></i> Conditional Rendering in
                     React
                   </p>
                 </div>
@@ -269,7 +270,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-mouse-pointer-click"></i> Event
+                    <i className="fi fi-tr-mouse-pointer-click"></i> Event
                     Handler(onChange) in React
                   </p>
                 </div>
@@ -285,7 +286,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-restock"></i> State Lifting in React
+                    <i className="fi fi-tr-restock"></i> State Lifting in React
                   </p>
                 </div>
 
@@ -300,7 +301,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-data-backup"></i> Control Form Data Using
+                    <i className="fi fi-tr-data-backup"></i> Control Form Data Using
                     Formik
                   </p>
                 </div>
@@ -316,7 +317,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-registration-paper"></i> Validate Form
+                    <i className="fi fi-tr-registration-paper"></i> Validate Form
                     Data Using Yup
                   </p>
                 </div>
@@ -332,7 +333,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-question-square"></i> Toogle FAQs in
+                    <i className="fi fi-tr-question-square"></i> Toogle FAQs in
                     React
                   </p>
                 </div>
@@ -348,7 +349,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-file-import"></i> Fetching Data with
+                    <i className="fi fi-tr-file-import"></i> Fetching Data with
                     useEffect Hook in React
                   </p>
                 </div>
@@ -364,7 +365,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-hook"></i> Fetching Data using Custom
+                    <i className="fi fi-tr-hook"></i> Fetching Data using Custom
                     Hook in React
                   </p>
                 </div>
@@ -380,7 +381,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-bell"></i> Toast Notification in React
+                    <i className="fi fi-tr-bell"></i> Toast Notification in React
                   </p>
                 </div>
 
@@ -395,7 +396,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-finish-flag"></i> Country App in React
+                    <i className="fi fi-tr-finish-flag"></i> Country App in React
                   </p>
                 </div>
 
@@ -410,7 +411,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-paintbrush-pencil"></i> Dynamic Style in
+                    <i className="fi fi-tr-paintbrush-pencil"></i> Dynamic Style in
                     React
                   </p>
                 </div>
@@ -426,7 +427,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-followcollection"></i> Prop Types in
+                    <i className="fi fi-tr-followcollection"></i> Prop Types in
                     React
                   </p>
                 </div>
@@ -442,7 +443,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-code-compare"></i> useRef in React
+                    <i className="fi fi-tr-code-compare"></i> useRef in React
                   </p>
                 </div>
 
@@ -457,7 +458,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-compress-alt"></i> useReducer in React
+                    <i className="fi fi-tr-compress-alt"></i> useReducer in React
                   </p>
                 </div>
 
@@ -472,7 +473,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-network-analytic"></i> useContext in React
+                    <i className="fi fi-tr-network-analytic"></i> useContext in React
                   </p>
                 </div>
 
@@ -487,12 +488,27 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                    <i class="fi fi-tr-sitemap"></i> contextApi in React
+                    <i className="fi fi-tr-sitemap"></i> contextApi in React
                   </p>
                 </div>
 
                 <div>
                   <ContextApi />
+                </div>
+              </div>
+            </div>
+
+            {/* useReducer with contextApi */}
+            <div className="country-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i className="fi fi-tr-sitemap"></i> useReducer with contextApi
+                  </p>
+                </div>
+
+                <div>
+                  <UseReducerwithContextApi />
                 </div>
               </div>
             </div>

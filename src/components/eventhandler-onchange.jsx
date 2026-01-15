@@ -42,16 +42,16 @@ export default class EventhandlerOnchange extends Component {
         <div className="form card">
           <h4 className='mb-3'>User Details Form</h4>
           <form onSubmit={this.handleFormData}>
-            <div class="form-group mb-3">
-              <input type="text" class="form-control" placeholder="Enter your name" required onChange={this.handleNameChange} />
+            <div className="form-group mb-3">
+              <input type="text" className="form-control" placeholder="Enter your name" required onChange={this.handleNameChange} />
             </div>
-            <div class="form-group mb-3">
-              <input type="email" class="form-control" placeholder="Enter email" required onChange={this.handleEmailChange} />
+            <div className="form-group mb-3">
+              <input type="email" className="form-control" placeholder="Enter email" required onChange={this.handleEmailChange} />
             </div>
-            <div class="form-group mb-3">
-              <input type="password" class="form-control" placeholder="Password" required onChange={this.handlePassChange} />
+            <div className="form-group mb-3">
+              <input type="password" className="form-control" placeholder="Password" required onChange={this.handlePassChange} />
             </div>
-            <button type="submit" class="btn btn-info w-100">Submit</button>
+            <button type="submit" className="btn btn-info w-100">Submit</button>
           </form>
         </div>
         <div className="showing-data card">

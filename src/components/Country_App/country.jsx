@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 
 const Country = (props) => {
   const { name, capital, area, flags, languages, region } = props.country;
-  console.log(props.country);
 
   const handleRemove = (name) => {
     props.onRemoveCountry(name);

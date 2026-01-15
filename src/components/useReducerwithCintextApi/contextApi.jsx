@@ -9,11 +9,11 @@ export const UserProvider = ({children}) => {
 
   const value = {
      users : users.user,
-     addUser : (payload) => {
-      dispatch({type: "ADD_USER", payload: payload});
+     addUser : (newUser) => {
+      dispatch({type: "ADD_USER", payload: newUser});
      },
-     deleteUser : (payload) => {
-      dispatch({type: "DELETE_USER", payload: payload});
+     deleteUser : (id) => {
+      dispatch({type: "DELETE_USER", payload: id});
      }
   }
 

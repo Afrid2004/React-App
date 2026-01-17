@@ -25,6 +25,7 @@ import UseReducer from "./components/useReducer";
 import UseContext from "./components/useContext/component-1";
 import ContextApi from "./components/contextApi";
 import UseReducerwithContextApi from "./components/useReducerwithCintextApi";
+import ReactRouter from "./components/reactRouter";
 
 var name, heading, cardbody;
 name = "Afrid";
@@ -46,9 +47,11 @@ function App() {
       <div className="main-custom-container">
         <div className="header">
           <div className="custom-container">
-            <h1>
-              Compleate React JS Project <i className="fi fi-tr-react"></i>
-            </h1>
+            <div className="logo">
+              <h1>
+                Compleate React JS Project <i className="fi fi-tr-react"></i>
+              </h1>
+            </div>
           </div>
         </div>
 
@@ -509,6 +512,21 @@ function App() {
 
                 <div>
                   <UseReducerwithContextApi />
+                </div>
+              </div>
+            </div>
+
+            {/* useReducer with contextApi */}
+            <div className="country-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                    <i className="fi fi-tr-sitemap"></i> useReducer with contextApi
+                  </p>
+                </div>
+
+                <div>
+                  <ReactRouter />
                 </div>
               </div>
             </div>

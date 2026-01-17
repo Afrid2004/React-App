@@ -517,6 +517,11 @@ li::marker{
   border-color: green !important;
 }
 
+nav .active{
+    background-color: bisque !important;
+    color: black !important;
+}
+
 /*====================responsive css========================*/
 
 @media (min-width:400px) {

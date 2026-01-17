@@ -5,6 +5,7 @@ import Blog from '../../pages/blog'
 import Contact from '../../pages/contact'
 import ErrorPage from '../../pages/404'
 import RouterNavbar from './routeNavbar'
+import SingleBlog from '../../pages/single-blog'
 
 
 const ReactRouter = () => {
@@ -14,6 +15,7 @@ const ReactRouter = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/blog' element={<Blog />} />
+        <Route path='/blog/:title' element={<SingleBlog />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='*' element={<ErrorPage />} />
       </Routes>

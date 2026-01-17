@@ -1,11 +1,31 @@
 import React from 'react'
+import { BlogData } from '../components/reactRouter/blogData'
+import { Link } from 'react-router-dom';
 
 const Blog = () => {
+  const truncateBody = (str , num) => {
+    if(str.length > num){
+      return str.slice(0, num) + '...';
+    }
+    return str;
+  }
   return (
     <div>
       <h1>Blog Page</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloribus consectetur doloremque. Harum accusamus velit minus quo ad rerum quos excepturi ab ea sunt. Deserunt possimus pariatur aperiam ducimus itaque soluta consectetur, iusto enim quas vero veniam eaque dolores quo quia minus culpa maxime iure qui, voluptates recusandae sequi assumenda?</p>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ducimus facere enim delectus est iste velit. Quibusdam accusamus quod numquam distinctio ab? Dolores ratione aperiam provident, magnam in temporibus voluptatum architecto earum ex dignissimos molestias quasi tempore natus maxime eveniet perferendis enim aliquam cumque ipsum consectetur pariatur! Laboriosam, fuga nobis?</p>
+      <div className="row h-100 mt-4">
+        {BlogData.map((data) => {
+          const {id , body, title, image} = data;
+          return <article key={id} className='col-md-4 d-flex'>
+              <div className="card d-flex flex-direction-colmn justify-content-between">
+                <div>
+                  <h2>{title}</h2>
+                  <p className='d-inline'>{truncateBody(body, 100)}<Link to={title}>Read More</Link> </p>
+                </div>
+                <img src={image} className='blog-img' alt="html"/>
+              </div>
+          </article>
+        })}
+      </div>
     </div>
   )
 }

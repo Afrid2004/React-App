@@ -26,6 +26,7 @@ import UseContext from "./components/useContext/component-1";
 import ContextApi from "./components/contextApi";
 import UseReducerwithContextApi from "./components/useReducerwithCintextApi";
 import ReactRouter from "./components/reactRouter";
+import ReactRouterUseLocation from "./components/reactRouterUseLocation";
 
 var name, heading, cardbody;
 name = "Afrid";
@@ -516,17 +517,32 @@ function App() {
               </div>
             </div>
 
-            {/* useReducer with contextApi */}
+            {/* React Router - Dynamic Routing */}
             <div className="country-div custom">
               <div>
                 <div className="category">
                   <p>
-                    <i className="fi fi-tr-sitemap"></i> useReducer with contextApi
+                   <i className="fi fi-tr-track"></i>React Router - Dynamic Routing
                   </p>
                 </div>
 
                 <div>
                   <ReactRouter />
+                </div>
+              </div>
+            </div>
+
+            {/* React Router - useLocation Dynamic Routing */}
+            <div className="country-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                   <i className="fi fi-tr-track"></i>React Router - useLocation Dynamic Routing
+                  </p>
+                </div>
+
+                <div>
+                  <ReactRouterUseLocation />
                 </div>
               </div>
             </div>

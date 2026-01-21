@@ -27,6 +27,8 @@ import ContextApi from "./components/contextApi";
 import UseReducerwithContextApi from "./components/useReducerwithCintextApi";
 import ReactRouter from "./components/reactRouter";
 import ReactRouterUseLocation from "./components/reactRouterUseLocation";
+import QueryParameter from "./components/queryParameter";
+import ProtectedRouting from "./components/protectedRouting";
 
 var name, heading, cardbody;
 name = "Afrid";
@@ -522,7 +524,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                   <i className="fi fi-tr-track"></i>React Router - Dynamic Routing
+                   <i className="fi fi-tr-track"></i> React Router - Dynamic Routing
                   </p>
                 </div>
 
@@ -537,12 +539,42 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                   <i className="fi fi-tr-track"></i>React Router - useLocation Dynamic Routing
+                   <i className="fi fi-tr-track"></i> React Router - useLocation Dynamic Routing
                   </p>
                 </div>
 
                 <div>
                   <ReactRouterUseLocation />
+                </div>
+              </div>
+            </div>
+
+            {/* queryParameter in React */}
+            <div className="country-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                   <i class="fi fi-tr-issue-loupe"></i> queryParameter in React
+                  </p>
+                </div>
+
+                <div>
+                  <QueryParameter />
+                </div>
+              </div>
+            </div>
+
+            {/* protectedRouting in React */}
+            <div className="country-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                   <i class="fi fi-tr-padlock-check"></i> protectedRouting in React
+                  </p>
+                </div>
+
+                <div>
+                  <ProtectedRouting />
                 </div>
               </div>
             </div>
@@ -556,7 +588,7 @@ function App() {
             <div className="footer-content">
               <p>
                 <span>
-                  &copy; 2025 | All Rights Reserved | design & developed by{" "}
+                  &copy; 2026 | All Rights Reserved | design & developed by{" "}
                   <a href="https://faisalafrid.vercel.app/">
                     Faisal Yousuf Afrid
                   </a>

@@ -29,6 +29,7 @@ import ReactRouter from "./components/reactRouter";
 import ReactRouterUseLocation from "./components/reactRouterUseLocation";
 import QueryParameter from "./components/queryParameter";
 import ProtectedRouting from "./components/protectedRouting";
+import JsonServer from "./JSON";
 
 var name, heading, cardbody;
 name = "Afrid";
@@ -554,7 +555,7 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                   <i class="fi fi-tr-issue-loupe"></i> queryParameter in React
+                   <i className="fi fi-tr-issue-loupe"></i> queryParameter in React
                   </p>
                 </div>
 
@@ -569,12 +570,27 @@ function App() {
               <div>
                 <div className="category">
                   <p>
-                   <i class="fi fi-tr-padlock-check"></i> protectedRouting in React
+                   <i className="fi fi-tr-padlock-check"></i> protectedRouting in React
                   </p>
                 </div>
 
                 <div>
                   <ProtectedRouting />
+                </div>
+              </div>
+            </div>
+
+            {/* JsonServer in React */}
+            <div className="country-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                   <i className="fi fi-tr-json-file"></i> JsonServer in React
+                  </p>
+                </div>
+
+                <div>
+                  <JsonServer />
                 </div>
               </div>
             </div>

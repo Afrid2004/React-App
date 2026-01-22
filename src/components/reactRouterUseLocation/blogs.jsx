@@ -1,6 +1,8 @@
 import React from 'react';
 import { BlogData } from './blogData';
 import { Link } from 'react-router-dom';
+import ReactHelmet from './reactHelmet';
+
 
 const Blogs = () => {
   const truncateBody = (str , num) => {
@@ -11,6 +13,7 @@ const Blogs = () => {
   }
   return (
       <div>
+        <ReactHelmet title="Blogs" />
         <h1>Blog Page</h1>
         <div className="row h-100 mt-4">
           {BlogData.map((data) => {

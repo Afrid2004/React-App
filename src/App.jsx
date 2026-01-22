@@ -30,6 +30,7 @@ import ReactRouterUseLocation from "./components/reactRouterUseLocation";
 import QueryParameter from "./components/queryParameter";
 import ProtectedRouting from "./components/protectedRouting";
 import JsonServer from "./JSON";
+import MemoComponent from "./components/memo";
 
 var name, heading, cardbody;
 name = "Afrid";
@@ -535,12 +536,12 @@ function App() {
               </div>
             </div>
 
-            {/* React Router - useLocation Dynamic Routing */}
+            {/* React Router - useLocation (Included React Helmet) */}
             <div className="country-div custom">
               <div>
                 <div className="category">
                   <p>
-                   <i className="fi fi-tr-track"></i> React Router - useLocation Dynamic Routing
+                   <i className="fi fi-tr-track"></i> React Router - useLocation (Included React Helmet)
                   </p>
                 </div>
 
@@ -591,6 +592,21 @@ function App() {
 
                 <div>
                   <JsonServer />
+                </div>
+              </div>
+            </div>
+
+            {/* Memo in React */}
+            <div className="country-div custom">
+              <div>
+                <div className="category">
+                  <p>
+                   <i className="fi fi-tr-compress-alt"></i> Memo in React
+                  </p>
+                </div>
+
+                <div>
+                  <MemoComponent />
                 </div>
               </div>
             </div>
